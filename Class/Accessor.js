@@ -1,3 +1,7 @@
+// _userGearsや、_userGearを用いることによって
+// car.userGears = 'X'のような意図しない操作を発見できる。
+// ただ、厳密にはcar._userGear = 'Xで値を変更できてしまう。
+
 class Car {
   constructor(make, model) {
     this.make = make
